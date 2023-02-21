@@ -1,0 +1,4 @@
+alias vsc='code-insiders'
+alias la='ls -la'
+alias ll='ls -alF'
+alias l='ls -CF'
