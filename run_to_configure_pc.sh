@@ -33,11 +33,24 @@ echo 'Press any key to continue...'; read -k1 -s
 echo
 sudo pamac install tree &&
 echo
-echo "====================> Install Neovim"
+echo "====================> Install Make"
 echo
 echo 'Press any key to continue...'; read -k1 -s
 echo
 sudo pamac install neovim -y &&
+echo
+echo "====================> Install pkg-config"
+echo
+echo 'Press any key to continue...'; read -k1 -s
+echo
+sudo pacman -Sy pkg-config &&
+echo
+
+echo "====================> Install Neovim"
+echo
+echo 'Press any key to continue...'; read -k1 -s
+echo
+sudo pacman -Sy make &&
 echo
 echo "====================> Configure ZSH"
 echo
