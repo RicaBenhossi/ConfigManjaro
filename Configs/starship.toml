@@ -45,9 +45,9 @@ map_symbol = true
 disabled = false
 
 [git_status]
-format = '(❬ $all_status❭) (❬ $ahead_behind(bold)❭) '
-ahead = '🡹 ${count}'
-behind = '🢃 ${count}'
+format = '(❬ $all_status❭ )(❬ $ahead_behind(bold)❭ )'
+ahead = '[🡹\(${count}\) ](bold #e99393)'
+behind = '[🢃\(${count}\) ](bold #99cc7f)'
 conflicted = '[conflicted\(${count}\) ](#E83B20)'
 deleted = 'deleted '
 diverged = '❕ 🡹{ahead_count} 🢃${behind_count} '
