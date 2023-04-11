@@ -44,16 +44,37 @@ pipestatus_format = '\[ $pipestatus \] [➜ ](bold blue)[$symbol( $common_meanin
 map_symbol = true
 disabled = false
 
+# [git_status]
+# format = '(❬ $all_status❭ )(❬ $ahead_behind(bold)❭ )'
+# ahead = '[🡹\(${count}\) ](bold #e99393)'
+# behind = '[🢃\(${count}\) ](bold #99cc7f)'
+# conflicted = '[conflicted\(${count}\) ](#E83B20)'
+# deleted = 'deleted '
+# diverged = '❕ 🡹{ahead_count} 🢃${behind_count} '
+# modified = '[modified\(${count}\) ](#E83B20)'
+# renamed = 'renamed '
+# staged = '[staged\(${count}\) ](bright-green)'
+# stashed = '[stashed\(${count}\) ](#FFAF19)'
+# untracked = '[untracked\(${count}\) ](#99badd)'
+# up_to_date = '[up to date ](bright-green)'
+
 [git_status]
 format = '(❬ $all_status❭ )(❬ $ahead_behind(bold)❭ )'
-ahead = '[🡹\(${count}\) ](bold #e99393)'
-behind = '[🢃\(${count}\) ](bold #99cc7f)'
+ahead = '[🡹\(${count}\) ](#99cc7f)'
+behind = '[🢃\(${count}\) ](#d11919)'
 conflicted = '[conflicted\(${count}\) ](#E83B20)'
 deleted = 'deleted '
-diverged = '❕ 🡹{ahead_count} 🢃${behind_count} '
+diverged = '[Diverged](#FFAF19) [🡹\($ahead_count\)](#99cc7f) [🢃\($behind_count\)](#d11919) '
 modified = '[modified\(${count}\) ](#E83B20)'
 renamed = 'renamed '
-staged = '[staged\(${count}\) ](bright-green)'
+staged = '[staged\(${count}\) ](#FFAF19)'
 stashed = '[stashed\(${count}\) ](#FFAF19)'
 untracked = '[untracked\(${count}\) ](#99badd)'
 up_to_date = '[up to date ](bright-green)'
+
+#Custom Colors
+# Orange = #FFAF19
+# Green = #99cc7f
+# Red = #d11919
+# Blue = #99badd
+# Yellow = #f2c846
