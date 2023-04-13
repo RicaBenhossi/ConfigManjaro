@@ -4,6 +4,9 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
+command_timeout = 50000
+palette = 'personal'
+
 format = """
 $all\
 $fill\
@@ -60,21 +63,19 @@ disabled = false
 
 [git_status]
 format = '(❬ $all_status❭ )(❬ $ahead_behind(bold)❭ )'
-ahead = '[🡹\(${count}\) ](#99cc7f)'
-behind = '[🢃\(${count}\) ](#d11919)'
-conflicted = '[conflicted\(${count}\) ](#E83B20)'
-deleted = 'deleted '
-diverged = '[Diverged](#FFAF19) [🡹\($ahead_count\)](#99cc7f) [🢃\($behind_count\)](#d11919) '
-modified = '[modified\(${count}\) ](#E83B20)'
-renamed = 'renamed '
-staged = '[staged\(${count}\) ](#FFAF19)'
-stashed = '[stashed\(${count}\) ](#FFAF19)'
-untracked = '[untracked\(${count}\) ](#99badd)'
+ahead = '[🡹\(${count}\) ](bright-green)'
+behind = '[🢃\(${count}\) ](bright-red)'
+conflicted = '[conflicted\(${count}\) ](red)'
+deleted = '[Deleted\(${count}\)](red) '
+diverged = '[Diverged:](orange) [🡹\($ahead_count\)](bright-green) [🢃\($behind_count\)](bright-red) '
+modified = '[modified\(${count}\) ](bright-red)'
+renamed = '[renamed](yellow) '
+staged = '[staged\(${count}\) ](bright-green)'
+stashed = '[stashed\(${count}\) ](lavander)'
+untracked = '[untracked\(${count}\) ](bright-blue)'
 up_to_date = '[up to date ](bright-green)'
 
-#Custom Colors
-# Orange = #FFAF19
-# Green = #99cc7f
-# Red = #d11919
-# Blue = #99badd
-# Yellow = #f2c846
+[palettes.personal]
+orange = '#FFAF19'
+bright-red = '#e06666'
+lavander = '#8e7cc3'
