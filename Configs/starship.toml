@@ -10,14 +10,14 @@ palette = 'personal'
 format = """
 $all\
 $fill\
-$status\
 $cmd_duration \
+$status \
 $line_break\
 $character
 """
 
 [character]
-success_symbol = '[⮞](bold green)'
+success_symbol = '[⮞](bold bright-green)'
 error_symbol = '[⮞](bold green)'
 
 [fill]
@@ -25,7 +25,7 @@ symbol = ' '
 
 [cmd_duration]
 format = ' [Took](bold italic #a9a9a9) [$duration]($style)'
-style = 'bold italic bright-purple'
+style = 'bold italic bright-blue'
 
 #[status]
 #symbol = '[⏺ ](bold red)'
@@ -38,8 +38,8 @@ style = 'bold italic bright-purple'
 #disabled = false
 
 [status]
-symbol = '🔴'
-success_symbol = '🟢'
+symbol = '[⏺ ](bold red)'
+success_symbol = '[⏺](bold green)'
 format = '[$symbol( $common_meaning)]($style)'
 pipestatus = true
 pipestatus_separator= '[ ➜ ](bold white)'
