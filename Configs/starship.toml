@@ -17,7 +17,7 @@ $character
 """
 
 [character]
-success_symbol = '[⮞](bold bright-green)'
+success_symbol = '[⮞](bold green)'
 error_symbol = '[⮞](bold green)'
 
 [fill]
@@ -25,20 +25,11 @@ symbol = ' '
 
 [cmd_duration]
 format = ' [Took](bold italic #a9a9a9) [$duration]($style)'
-style = 'bold italic bright-blue'
+style = 'bold italic lavander'
 
-#[status]
-#symbol = '[⏺ ](bold red)'
-#success_symbol = '[⏺](bold green)'
-#format = '[$symbol$common_meaning]($style)'
-#pipestatus = true
-#pipestatus_separator= '[ ➜ ](bold white)'
-#pipestatus_format = '\[ $pipestatus \] [➜ ](bold blue)[$symbol$common_meaning]($style)'
-#map_symbol = true
-#disabled = false
 
 [status]
-symbol = '[⏺ ](bold red)'
+symbol = '[⏺](bold red)'
 success_symbol = '[⏺](bold green)'
 format = '[$symbol( $common_meaning)]($style)'
 pipestatus = true
@@ -47,35 +38,166 @@ pipestatus_format = '\[ $pipestatus \] [➜ ](bold blue)[$symbol( $common_meanin
 map_symbol = true
 disabled = false
 
-# [git_status]
-# format = '(❬ $all_status❭ )(❬ $ahead_behind(bold)❭ )'
-# ahead = '[🡹\(${count}\) ](bold #e99393)'
-# behind = '[🢃\(${count}\) ](bold #99cc7f)'
-# conflicted = '[conflicted\(${count}\) ](#E83B20)'
-# deleted = 'deleted '
-# diverged = '❕ 🡹{ahead_count} 🢃${behind_count} '
-# modified = '[modified\(${count}\) ](#E83B20)'
-# renamed = 'renamed '
-# staged = '[staged\(${count}\) ](bright-green)'
-# stashed = '[stashed\(${count}\) ](#FFAF19)'
-# untracked = '[untracked\(${count}\) ](#99badd)'
-# up_to_date = '[up to date ](bright-green)'
-
 [git_status]
 format = '(❬ $all_status❭ )(❬ $ahead_behind(bold)❭ )'
-ahead = '[🡹\(${count}\) ](bright-green)'
-behind = '[🢃\(${count}\) ](bright-red)'
-conflicted = '[conflicted\(${count}\) ](red)'
+ahead = '[🡹\(${count}\) ](bold bright-green)'
+behind = '[🢃\(${count}\) ](bold bright-red)'
+conflicted = '[conflicted\(${count}\) ](bold red)'
 deleted = '[Deleted\(${count}\)](red) '
-diverged = '[Diverged:](orange) [🡹\($ahead_count\)](bright-green) [🢃\($behind_count\)](bright-red) '
-modified = '[modified\(${count}\) ](bright-red)'
-renamed = '[renamed](yellow) '
-staged = '[staged\(${count}\) ](bright-green)'
-stashed = '[stashed\(${count}\) ](lavander)'
-untracked = '[untracked\(${count}\) ](bright-blue)'
-up_to_date = '[up to date ](bright-green)'
+diverged = '[Diverged:](bold orange) [🡹\($ahead_count\)](bold bright-green) [🢃\($behind_count\)](bold bright-red) '
+modified = '[modified\(${count}\) ](bold bright-red)'
+renamed = '[renamed](bold yellow) '
+staged = '[staged\(${count}\) ](bold bright-green)'
+stashed = '[stashed\(${count}\) ](bold lavander)'
+untracked = '[untracked\(${count}\) ](bold light-blue)'
+up_to_date = '[up to date ](bold light-green)'
 
 [palettes.personal]
 orange = '#FFAF19'
 bright-red = '#e06666'
 lavander = '#8090ff'
+light-blue = '#63b8ff'
+light-green = '#86cb68'
+
+# Change the languages symbols for text
+[aws]
+symbol = "aws "
+
+[azure]
+symbol = "az "
+
+[bun]
+symbol = "bun "
+
+[c]
+symbol = "C "
+
+[cobol]
+symbol = "cobol "
+
+[conda]
+symbol = "conda "
+
+[crystal]
+symbol = "cr "
+
+[cmake]
+symbol = "cmake "
+
+[daml]
+symbol = "daml "
+
+[dart]
+symbol = "dart "
+
+[deno]
+symbol = "deno "
+
+[dotnet]
+symbol = ".NET "
+
+[docker_context]
+symbol = "docker "
+
+[elixir]
+symbol = "exs "
+
+[elm]
+symbol = "elm "
+
+[fennel]
+symbol = "fnl "
+
+[fossil_branch]
+symbol = "fossil "
+
+[gcloud]
+symbol = "gcp "
+
+[golang]
+symbol = "go "
+
+[gradle]
+symbol = "gradle "
+
+[guix_shell]
+symbol = "guix "
+
+[hg_branch]
+symbol = "hg "
+
+[java]
+symbol = "java "
+style = 'bold bright-red'
+
+[julia]
+symbol = "jl "
+
+[kotlin]
+symbol = "kt "
+
+[lua]
+symbol = "lua "
+
+[nodejs]
+symbol = "nodejs "
+
+[meson]
+symbol = "meson "
+
+[nim]
+symbol = "nim "
+
+[nix_shell]
+symbol = "nix "
+
+[ocaml]
+symbol = "ml "
+
+[opa]
+symbol = "opa "
+
+[package]
+symbol = "pkg "
+
+[perl]
+symbol = "pl "
+
+[php]
+symbol = "php "
+
+[pijul_channel]
+symbol = "pijul "
+
+[pulumi]
+symbol = "pulumi "
+
+[purescript]
+symbol = "purs "
+
+[python]
+symbol = "py "
+
+[raku]
+symbol = "raku "
+
+[ruby]
+symbol = "rb "
+
+[rust]
+symbol = "rs "
+
+[scala]
+symbol = "scala "
+
+[spack]
+symbol = "spack "
+
+[swift]
+symbol = "swift "
+
+[terraform]
+symbol = "terraform "
+
+[zig]
+symbol = "zig "
