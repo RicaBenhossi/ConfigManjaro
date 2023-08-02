@@ -1,0 +1,7 @@
+@define-color accent_color #55dfc4;
+@define-color accent_bg_color #16a085;
+VteTerminal,
+    TerminalScreen,
+    vte-terminal {
+        padding: 5px 8px 15px 8px;
+    }
